@@ -59,16 +59,34 @@ div#formulario > p {
 form > div.campo {
     background-color: #5f2c82;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 7px;
     margin: 5px 0px;
+    border: 2px solid #5f2c82;
 }
 
 div.campo > label {
     display: none;
 }
 
-form > div.campo > input {
-    border-radius: 5px;
+div.campo > i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #94cfcd;
+    padding: 4px;
+    border-radius: 7px;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 45px);
+    transform: translateY(-13px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
